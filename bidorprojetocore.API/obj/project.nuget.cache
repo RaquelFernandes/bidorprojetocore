@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xi0NcJrzOydJ8aZgTZGY+u/3rp1N/QrqOQekaD8rjWryR4ACcpR+XvPxnYZLS4Zh4F+6jjVdnSqUg53fxTqunA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Raquel\\Documents\\Core\\bidorprojetocore\\bidorprojetocore.API\\bidorprojetocore.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Raquel\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
