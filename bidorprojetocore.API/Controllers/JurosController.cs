@@ -1,11 +1,5 @@
-﻿using bidorprojetocore.API.Models;
+﻿using bidorprojetocore.API.Dominios;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace bidorprojetocore.API.Controllers
 {
@@ -13,18 +7,18 @@ namespace bidorprojetocore.API.Controllers
     [Route("api/[controller]")]
     public class JurosController : ControllerBase
     {
-        private IConfiguration _configuration;
+        private IJurosServico _jurosServico;
 
-        public JurosController(IConfiguration configuration)
+        public JurosController(IJurosServico jurosServico)
         {
-            _configuration = configuration;
+            _jurosServico = jurosServico;
         }
 
         [HttpGet("taxaJuros")]
-        public IActionResult Index()
+        public IActionResult TaxaDeJuros()
         {
-            var taxaPorMes = _configuration.GetValue<string>("TaxaDeJuros:TaxaPorMes");
-            return Ok(Convert.ToDecimal(taxaPorMes, CultureInfo.GetCultureInfo("en-us")));
+            var taxaPorMes = _jurosServico.RecuperarTaxaDeJurosMensal();
+            return Ok(taxaPorMes.ToString());
         }
     }
 }
