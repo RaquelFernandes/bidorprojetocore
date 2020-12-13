@@ -18,3 +18,4 @@ C:\Users\Raquel\Documents\Core\bidorprojetocore\bidorprojetocore.API\obj\Debug\n
 C:\Users\Raquel\Documents\Core\bidorprojetocore\bidorprojetocore.API\obj\Debug\netcoreapp3.1\bidorprojetocore.API.dll
 C:\Users\Raquel\Documents\Core\bidorprojetocore\bidorprojetocore.API\obj\Debug\netcoreapp3.1\bidorprojetocore.API.pdb
 C:\Users\Raquel\Documents\Core\bidorprojetocore\bidorprojetocore.API\obj\Debug\netcoreapp3.1\bidorprojetocore.API.genruntimeconfig.cache
+C:\Users\Raquel\Documents\Core\bidorprojetocore\bidorprojetocore.API\obj\Debug\netcoreapp3.1\bidorprojetocore.API.csprojAssemblyReference.cache
