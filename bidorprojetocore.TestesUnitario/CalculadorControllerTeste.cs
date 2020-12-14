@@ -23,20 +23,22 @@ namespace bidorprojetocore.TestesUnitario
             _factory = factory;
         }
 
-            
-        [Fact]
-        public void Get_CalculoDoValorFinal_DeveRetornarValorAcimaDoInicial()
+
+        [Theory]
+        [InlineData(100)]
+        [InlineData(200)]
+        public void Get_CalculoDoValorFinal_DeveRetornarValorAcimaDoInicial(double valorInicial)
         {
-            double valorinicial = 100;
-            int meses = 5;
+            var configuration = new ConfigurationBuilder()
+                                .AddInMemoryCollection()
+                                .Build();
 
-            var clientHttp = _factory.CreateClient();
+            var calculadorServico = new CalculadorServico(configuration);
+            var montante = calculadorServico.CalcularMontanteMensal(0.01, 5);
 
-            var retornoJuros = clientHttp.GetAsync($"https://localhost:44346/api/calculador/calculajuros?valorinicial={valorinicial}&meses={meses}").Result;
+            var valorFinalComJuros = valorInicial * montante;
 
-            var juros = Convert.ToDouble(retornoJuros.Content.ReadAsStringAsync().Result, CultureInfo.GetCultureInfo("pt-br"));
-            
-            juros.Should().BeGreaterThan(100, because: "Valor informado do montante");
+            valorFinalComJuros.Should().BeGreaterThan(valorInicial, because: "O valor final não está como esperado.");
 
         }
 
