@@ -10,7 +10,8 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("bidorprojetocore.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Raquel\\Documents\\Core\\bidorprojetocore\\bidorprojetocore.API", "bidorprojetocore.API.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("bidorprojetocore.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "c:\\Users\\Raquel\\Documents\\Estudos\\Core\\bidor\\bidorprojetocore\\bidorprojetocore.AP" +
+    "I", "bidorprojetocore.API.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("bidorprojetocore.TestesUnitario")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

@@ -27,18 +27,18 @@ namespace bidorprojetocore.TestesUnitario
 
             var valorDoJuros = Convert.ToDouble(resultadoresponse.Content.ReadAsStringAsync().Result, CultureInfo.GetCultureInfo("pt-br"));
 
-            valorDoJuros.Should().Be(0.01, because: "O valor do juros não corresponde ao esperado");
+            valorDoJuros.Should().Be(0.01, because: "O valor do juros nï¿½o corresponde ao esperado");
         }
 
         [Fact]
-        public void Get_RecuperarValorDoJuros_NãoPodeSerZero()
+        public void Get_RecuperarValorDoJuros_NaoPodeSerZero()
         {
             var client = _factory.CreateClient();
             var resultadoresponse = client.GetAsync($"https://localhost:44346/api/juros/taxaJuros").Result;
 
             var valorDoJuros = Convert.ToDouble(resultadoresponse.Content.ReadAsStringAsync().Result, CultureInfo.GetCultureInfo("pt-br"));
 
-            valorDoJuros.Should().NotBe(0, because: "O valor do juros não pode ser 0.");
+            valorDoJuros.Should().NotBe(0, because: "O valor do juros nï¿½o pode ser 0.");
         }
 
     }

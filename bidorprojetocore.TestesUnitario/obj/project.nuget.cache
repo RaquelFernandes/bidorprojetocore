@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/lPFGqcwth2xkzYCMyrzSBjkxFjQZURpPUW2VGgyRBmY4BDy+x2GohZ8wMXOGnKKabr27MhecIfAQ+iml5v+1A==",
+  "dgSpecHash": "xtHDhARC0PinBPhDhEhgTaKl17hDoDZZX7sffgOIPCQIYoDx4YO8fRGcEd7uGSb5jMQsxIHabm/t5FgCOkDhng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Raquel\\Documents\\Core\\bidorprojetocore\\bidorprojetocore.TestesUnitario\\bidorprojetocore.TestesUnitario.csproj",
+  "projectFilePath": "C:\\Users\\Raquel\\Documents\\Estudos\\Core\\bidor\\bidorprojetocore\\bidorprojetocore.TestesUnitario\\bidorprojetocore.TestesUnitario.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raquel\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\Raquel\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
